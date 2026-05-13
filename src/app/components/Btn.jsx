@@ -1,5 +1,3 @@
-import React from "react";
-
 const Btn = ({ children, variant = "primary", small, style: s, ...props }) => {
   const styles = {
     primary: {
@@ -40,8 +38,8 @@ const Btn = ({ children, variant = "primary", small, style: s, ...props }) => {
         ...styles[variant],
         ...s,
       }}
-      onMouseEnter={e => (e.currentTarget.style.opacity = "0.85")}
-      onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+      onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
+      onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
     >
       {children}
     </button>

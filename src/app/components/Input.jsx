@@ -1,5 +1,3 @@
-import React from "react";
-
 const Input = ({ label, error, ...props }) => (
   <div style={{ marginBottom: 14 }}>
     {label && (
@@ -33,11 +31,17 @@ const Input = ({ label, error, ...props }) => (
         transition: "border-color 0.2s",
         ...props.style,
       }}
-      onFocus={e => (e.target.style.borderColor = error ? "#ef4444" : "#3b82f6")}
-      onBlur={e => (e.target.style.borderColor = error ? "#ef4444" : "#1f2d44")}
+      onFocus={(e) =>
+        (e.target.style.borderColor = error ? "#ef4444" : "#3b82f6")
+      }
+      onBlur={(e) =>
+        (e.target.style.borderColor = error ? "#ef4444" : "#1f2d44")
+      }
     />
     {error && (
-      <div style={{ color: "#ef4444", fontSize: 12, marginTop: 4 }}>{error}</div>
+      <div style={{ color: "#ef4444", fontSize: 12, marginTop: 4 }}>
+        {error}
+      </div>
     )}
   </div>
 );

@@ -2,7 +2,6 @@ import { useState } from "react";
 import Input from "../components/Input";
 import Btn from "../components/Btn";
 import Card from "../components/Card";
-import Icon from "../components/Icon";
 import { load, save, INITIAL_STATE } from "../utils/storage";
 
 function SignupScreen({ onSignup }) {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Select = ({ label, children, ...props }) => (
   <div style={{ marginBottom: 14 }}>
     {label && (
@@ -32,7 +30,9 @@ const Select = ({ label, children, ...props }) => (
         fontFamily: "inherit",
         cursor: "pointer",
       }}
-    >{children}</select>
+    >
+      {children}
+    </select>
   </div>
 );
 

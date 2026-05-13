@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = ({ children, style: s, warning }) => (
   <div
     style={{
@@ -9,7 +7,9 @@ const Card = ({ children, style: s, warning }) => (
       padding: 20,
       ...s,
     }}
-  >{children}</div>
+  >
+    {children}
+  </div>
 );
 
 export default Card;
