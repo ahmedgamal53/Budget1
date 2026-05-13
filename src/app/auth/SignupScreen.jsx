@@ -13,6 +13,7 @@ function SignupScreen({ onSignup }) {
     setErrors((e) => ({ ...e, [k]: "" }));
   };
 
+  
   const validate = () => {
     const e = {};
     if (!form.name.trim()) e.name = "Name required";
@@ -38,6 +39,7 @@ function SignupScreen({ onSignup }) {
     save(state);
     onSignup(state);
   };
+  
 
   return (
     <Card>
