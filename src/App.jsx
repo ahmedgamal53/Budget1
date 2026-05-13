@@ -43,6 +43,7 @@ export default function App() {
     );
   }
 
+  
   // Edit budget
   if (screen === "editBudget") {
     return (
@@ -64,6 +65,7 @@ export default function App() {
     );
   }
 
+  
   const saveTx = (tx) => {
     const exists = transactions.find((t) => t.id === tx.id);
     const next = exists
